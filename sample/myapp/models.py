@@ -1,10 +1,10 @@
 from django.db import models
 from django.contrib import admin
-class Employee (models.Model):
-    eid=models.CharField(max_length=20)
+class players (models.Model):
+    playerid=models.CharField(max_length=20)
     name=models.CharField(max_length=100)
-    salary=models.IntegerField()
+    score=models.IntegerField()
     age=models.IntegerField()
     email=models.EmailField()
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
+class playersAdmin(admin.ModelAdmin):
+    list_display=('playerid','name','score','age','email')
